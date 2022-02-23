@@ -8,10 +8,13 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.ML" Version="1.7.0" />
     <PackageReference Include="Microsoft.ML.AutoML" Version="0.19.0" />
-    <PackageReference Include="Microsoft.ML.Recommender" Version="0.19.0" />
-    <PackageReference Include="Microsoft.ML.TimeSeries" Version="1.7.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="data\car_data.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
 </Project>
